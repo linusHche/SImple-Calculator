@@ -1,24 +1,31 @@
-package com.example.lda.simple_calculator;
+package com.example.linusanddave.simple_calculator;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class Calculations {
 
-    public static double addition(double a, double b) {
-        return a+b;
+    public static String addition(double a, double b) {
+        NumberFormat nf = new DecimalFormat("##.###############");
+        return nf.format(a+b);
     }
 
-    public static double subraction(double a, double b) {
-        return a-b;
+    public static String subtraction(double a, double b) {
+        NumberFormat nf = new DecimalFormat("##.###############");
+        return nf.format(a-b);
     }
 
-    public static double mutiplication(double a, double b) {
-        return a*b;
+    public static String multiplication(double a, double b) {
+        NumberFormat nf = new DecimalFormat("##.###############");
+        return nf.format(a*b);
     }
 
-    public static double regDivision(double a, double b) {
-        return a/b;
+    public static String regularDivision(double a, double b) {
+        NumberFormat nf = new DecimalFormat("##.###############");
+        return nf.format(a/b);
     }
 
-    public static String devisionWiRemainder(double a, double b) {
+    public static String divisionWithRemainder(double a, double b) {
         int quot = (int) (a/b);
         int rem = (int) (a%b);
         return quot + " r " + rem;
