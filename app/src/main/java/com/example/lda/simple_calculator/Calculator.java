@@ -1,4 +1,4 @@
-package com.example.linusanddave.simple_calculator;
+package com.example.lda.simple_calculator;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
