@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Simple-Calculator</string>
+
+
+    <string-array name="units">
+        <item>Centimeters</item>
+        <item>Inches</item>
+        <item>Kilometers</item>
+        <item>Meters</item>
+        <item>Miles</item>
+        <item>Feet</item>
+        <item>Yards</item>
+    </string-array>
+
+
+
 </resources>

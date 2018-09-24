@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button calculator = findViewById(R.id.Calculator);
+        Button unitConverter = findViewById(R.id.unit_conversion);
 
 
         calculator.setOnClickListener(new View.OnClickListener() {
@@ -21,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent calculatorIntent = new Intent(getApplicationContext(), Calculator.class);
                 startActivity(calculatorIntent);
+            }
+        });
+
+        unitConverter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent unitConverterIntent = new Intent(getApplicationContext(), UnitConverter.class);
+                startActivity(unitConverterIntent);
             }
         });
 
