@@ -8,19 +8,6 @@
         tools:context=".Calculator">
 
     <Button
-            android:text="R/"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:background="@drawable/addbuttonshape"
-            android:gravity="center_vertical|center_horizontal"
-            android:id="@+id/remainderDivision_btn"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            android:textSize="30sp" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.937"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintVertical_bias="0.532"/>
-    <Button
             android:text="4"
             android:layout_width="65dp"
             android:layout_height="65dp"
@@ -98,6 +85,19 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.643"/>
     <Button
+            android:text="0"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/buttonshape"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/zero"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintVertical_bias="0.911" android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.937"/>
+    <Button
             android:text="3"
             android:layout_width="65dp"
             android:layout_height="65dp"
@@ -163,7 +163,7 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.937"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
-            app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintVertical_bias="0.789"/>
     <Button
             android:text="*"
             android:layout_width="65dp"
@@ -202,7 +202,7 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.937"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintVertical_bias="0.718"/>
+            app:layout_constraintVertical_bias="0.532"/>
     <Button
             android:text="+"
             android:layout_width="65dp"

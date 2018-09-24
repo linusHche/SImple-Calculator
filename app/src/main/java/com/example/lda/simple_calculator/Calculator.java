@@ -31,11 +31,11 @@ public class Calculator extends AppCompatActivity {
         Button sevenbtn = findViewById(R.id.seven);
         Button eightbtn = findViewById(R.id.eight);
         Button ninebtn = findViewById(R.id.nine);
+        Button zerobtn = findViewById(R.id.zero);
         Button addbtn = findViewById(R.id.add_btn);
         Button subbtn = findViewById(R.id.sub_btn);
         Button mulbtn = findViewById(R.id.multiplication_btn);
         Button divbtn = findViewById(R.id.division_btn);
-        Button rembtn = findViewById(R.id.remainderDivision_btn);
         Button equalbtn = findViewById(R.id.equal_btn);
         Button clearbtn = findViewById(R.id.clear_btn);
 
@@ -102,6 +102,15 @@ public class Calculator extends AppCompatActivity {
             }
         });
 
+        zerobtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                whenClicked1(0, screen);
+            }
+        });
+
+
+
         addbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -142,15 +151,6 @@ public class Calculator extends AppCompatActivity {
             }
         });
 
-        rembtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                functionPressed = true;
-                currentFunction = Function.REM;
-                equalPressed = false;
-
-            }
-        });
 
         equalbtn.setOnClickListener(new View.OnClickListener() {
             @Override
