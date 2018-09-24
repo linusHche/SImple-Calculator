@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".Calculator">
         </activity>
+        <activity android:name=".UnitConverter">
+        </activity>
     </application>
 
 </manifest>
